@@ -3,11 +3,10 @@ body {
 
 .greeting {
   background-color: black;
-  max-height: 435px; }
+  max-height: 1wh; }
 
 .col-sm-8 {
-  height: auto;
-  border: 5px solid #F5F5F5; }
+  height: auto; }
 
 .welcome {
   display: block; }
@@ -20,13 +19,14 @@ body {
   .welcome__profession {
     background-color: #4E4E4E;
     display: block;
-    padding: 20px;
-    max-width: 25vw;
+    padding: 15px;
+    max-width: 24vw;
     margin: 0 auto;
     font-size: 2vw;
     font-family: 'Reenie Beanie', cursive;
     text-align: center;
-    color: #F5F5F5; }
+    color: #F5F5F5;
+    border-radius: 5px; }
   .welcome__section {
     text-align: center;
     margin-bottom: 5%; }
