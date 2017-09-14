@@ -1,3 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm){
+  html {
+    font-size: 16 px;
+  }
+}
+
+@include media-breakpoint-up(md){
+  html {
+    font-size: 20 px;
+  }
+}
+
+@include media-breakpoint-up(lg){
+  html {
+    font-size: 28 px;
+  }
+}
+
+
 body {
   height: 1800px;
 }
@@ -18,7 +41,6 @@ body {
     margin-top: 5%;
     text-align: center;
     color: #F5F5F5;
-    font-size: 6vw;
     padding-bottom: 0.4rem;
   }
 
@@ -28,7 +50,6 @@ body {
     padding: 15px;
     max-width: 24vw;
     margin: 0 auto;
-    font-size: 2vw;
     font-family: 'Reenie Beanie', cursive;
     text-align: center;
     color: #F5F5F5;
