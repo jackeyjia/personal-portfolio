@@ -99,6 +99,17 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent; } }
 
+.job__title {
+  font-size: 1.3rem; }
+
+.job__detail {
+  font-size: 0.75rem; }
+
+br {
+  display: block;
+  margin: 10px 0;
+  line-height: 22px; }
+
 body {
   height: 1800px; }
 
