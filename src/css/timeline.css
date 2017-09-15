@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul {
   background: #456990;
   padding: 50px 0; }
@@ -58,6 +61,8 @@ time {
   font-weight: bold;
   margin-bottom: 8px; }
 
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul li::after {
   transition: background .5s ease-in-out; }
 
@@ -80,6 +85,8 @@ time {
   visibility: visible;
   opacity: 1; }
 
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px; }
@@ -98,67 +105,3 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent; } }
-
-body {
-  height: 1800px; }
-
-.greeting {
-  background-color: black;
-  max-height: 1wh; }
-
-.col-sm-8 {
-  height: auto; }
-
-.welcome {
-  display: block; }
-  .welcome__sign {
-    margin-top: 5%;
-    text-align: center;
-    color: #F5F5F5;
-    font-size: 6vw;
-    padding-bottom: 0.4rem; }
-  .welcome__profession {
-    background-color: #4E4E4E;
-    display: block;
-    padding: 15px;
-    max-width: 24vw;
-    margin: 0 auto;
-    font-size: 2vw;
-    font-family: 'Reenie Beanie', cursive;
-    text-align: center;
-    color: #F5F5F5;
-    border-radius: 5px; }
-  .welcome__section {
-    text-align: center;
-    margin-bottom: 5%; }
-  .welcome__link {
-    display: inline;
-    padding-top: 2vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw; }
-
-.sub-section {
-  display: table;
-  margin: 0 auto; }
-
-.number-section::after {
-  content: "";
-  display: block;
-  width: 30%;
-  border-bottom: 1.5px solid black; }
-
-.subtitle {
-  text-transform: uppercase; }
-
-.introuction {
-  margin-top: 6vh; }
-
-.introuction__summary {
-  text-align: right; }
-
-.introuction__detail {
-  font-size: 0.8rem;
-  line-height: 1.8rem; }
-
-.introuction__detail--part2 {
-  max-width: 300px; }
