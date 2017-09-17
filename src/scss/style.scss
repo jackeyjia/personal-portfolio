@@ -1,6 +1,8 @@
 @import "timeline";
 @import "welcome";
 
+$blue__primary: #34495e;
+
 body {
   width: 100%;
   height: 100%;
@@ -8,7 +10,7 @@ body {
 }
 
 .welcome {
-  background-color: #34495e;
+  background-color: $blue__primary;
   height: 100vh;
   
   
@@ -40,22 +42,26 @@ body {
   // }
 }
 
+.sub-section {
+  display: table;
+  margin: 0 auto;
+  color: #151617;
+}
+
 .about-me {
 height: 100vh;
 }
 
-
-.sub-section {
-  display: table;
-  margin: 0 auto;
-  margin-top: 18%;
+.padding--top {
+  padding-top: 13%;
 }
+
 
 .number-section::after {
   content: ""; 
   display: block;
   width: 30%; 
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid #151617;
 }
 
 .subtitle {
@@ -65,13 +71,16 @@ height: 100vh;
 .introuction {
   margin-top: 6vh;
 }
+
 .introuction__summary {
   text-align: right;
+  color: $blue__primary;
 }
 
 .introuction__detail {
   font-size: 0.8rem;
   line-height: 1.8rem;
+  color: #3B6775;
 }
 
 

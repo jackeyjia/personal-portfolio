@@ -1,5 +1,5 @@
 .timeline {
-  background: #456990;
+  background: #3B7182;
   padding: 50px 0; }
 
 .timeline ul li {
@@ -26,7 +26,7 @@
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #F45B69; }
+  background: #DE7B96; }
 
 .timeline ul li div::before {
   content: '';
@@ -42,7 +42,7 @@
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent; }
+  border-color: transparent #DE7B96 transparent transparent; }
 
 .timeline ul li:nth-child(even) div {
   left: -439px; }
@@ -50,7 +50,7 @@
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69; }
+  border-color: transparent transparent transparent #DE7B96; }
 
 time {
   display: block;
@@ -62,7 +62,7 @@ time {
   transition: background .5s ease-in-out; }
 
 .timeline ul li.in-view::after {
-  background: #F45B69; }
+  background: #DE7B96; }
 
 .timeline ul li div {
   visibility: hidden;
@@ -97,10 +97,11 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent; } }
+    border-color: transparent #DE7B96 transparent transparent; } }
 
 .job__title {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  font-weight: bold; }
 
 .job__detail {
   font-size: 0.75rem; }
@@ -265,19 +266,22 @@ body {
       border: 3px solid white;
       border-radius: 10px; }
 
-.about-me {
-  height: 100vh; }
-
 .sub-section {
   display: table;
   margin: 0 auto;
-  margin-top: 18%; }
+  color: #151617; }
+
+.about-me {
+  height: 100vh; }
+
+.padding--top {
+  padding-top: 13%; }
 
 .number-section::after {
   content: "";
   display: block;
   width: 30%;
-  border-bottom: 1.5px solid black; }
+  border-bottom: 1.5px solid #151617; }
 
 .subtitle {
   text-transform: uppercase; }
@@ -286,11 +290,13 @@ body {
   margin-top: 6vh; }
 
 .introuction__summary {
-  text-align: right; }
+  text-align: right;
+  color: #34495e; }
 
 .introuction__detail {
   font-size: 0.8rem;
-  line-height: 1.8rem; }
+  line-height: 1.8rem;
+  color: #3B6775; }
 
 .introuction__detail--part2 {
   max-width: 300px; }
