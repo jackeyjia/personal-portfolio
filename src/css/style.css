@@ -248,9 +248,13 @@ br {
 .skills {
   height: 100vh;
   color: #F2F2F2; }
+  .skills__details {
+    display: table;
+    margin: 0 auto; }
 
-#html5 {
-  margin: 20px;
+.progress {
+  margin: 10px 30px;
+  display: inline-block;
   width: 200px;
   height: 200px;
   position: relative;
