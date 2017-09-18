@@ -245,6 +245,10 @@ br {
   83.3%, 95.96% {
     transform: translate3d(0, -25%, 0); } }
 
+.skiils {
+  height: 100vh;
+  background-color: red; }
+
 body {
   width: 100%;
   height: 100%;
@@ -300,3 +304,6 @@ body {
 
 .introuction__detail--part2 {
   max-width: 300px; }
+
+.skills {
+  height: 100vh; }
