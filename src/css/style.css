@@ -246,13 +246,15 @@ br {
     transform: translate3d(0, -25%, 0); } }
 
 .skills {
-  height: 100vh; }
+  height: 100vh;
+  color: #F2F2F2; }
 
-#container {
+#html5 {
   margin: 20px;
   width: 200px;
   height: 200px;
-  position: relative; }
+  position: relative;
+  background-color: transparent; }
 
 body {
   width: 100%;
