@@ -30,14 +30,15 @@
   
 })();
 
+
+
+// Skills Progress Bar
+
 var startColor = '#FC5B3F';
 var endColor = '#9ec64d';
 
-
 var html = new ProgressBar.Circle(html5, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -46,7 +47,6 @@ var html = new ProgressBar.Circle(html5, {
     autoStyleContainer: false,
     value: 'HTML5'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -59,13 +59,11 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-html.animate(0.75, opts);  // Number from 0.0 to 1.0
+html.animate(0.75, opts);
 
 
 var css = new ProgressBar.Circle(css3, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -74,7 +72,6 @@ var css = new ProgressBar.Circle(css3, {
     autoStyleContainer: false,
     value: 'CSS3'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -87,13 +84,11 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-css.animate(0.75, opts);  // Number from 0.0 to 1.0
+css.animate(0.75, opts);
 
 
 var sass_1 = new ProgressBar.Circle(sass, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -102,7 +97,6 @@ var sass_1 = new ProgressBar.Circle(sass, {
     autoStyleContainer: false,
     value: 'SASS'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -115,13 +109,11 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-sass_1.animate(0.75, opts);  // Number from 0.0 to 1.0
+sass_1.animate(0.75, opts);
 
 
 var js = new ProgressBar.Circle(javascript, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -130,7 +122,6 @@ var js = new ProgressBar.Circle(javascript, {
     autoStyleContainer: false,
     value: 'JavaScript'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -143,13 +134,11 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-js.animate(0.75, opts);  // Number from 0.0 to 1.0
+js.animate(0.75, opts);
 
 
 var angular_js = new ProgressBar.Circle(angularjs, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -158,7 +147,6 @@ var angular_js = new ProgressBar.Circle(angularjs, {
     autoStyleContainer: false,
     value: 'AngularJS'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -171,12 +159,10 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-angular_js.animate(0.75, opts);  // Number from 0.0 to 1.0
+angular_js.animate(0.75, opts);
 
 var angular_2 = new ProgressBar.Circle(angular, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -185,7 +171,6 @@ var angular_2 = new ProgressBar.Circle(angular, {
     autoStyleContainer: false,
     value: 'Angular'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -198,13 +183,11 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-angular_2.animate(0.75, opts);  // Number from 0.0 to 1.0
+angular_2.animate(0.75, opts);
 
 
 var node = new ProgressBar.Circle(nodejs, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -213,7 +196,6 @@ var node = new ProgressBar.Circle(nodejs, {
     autoStyleContainer: false,
     value: 'Node.js'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -226,12 +208,10 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-node.animate(0.75, opts);  // Number from 0.0 to 1.0
+node.animate(0.75, opts);
 
 var db = new ProgressBar.Circle(mysql, {
   color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
   easing: 'easeInOut',
@@ -240,7 +220,6 @@ var db = new ProgressBar.Circle(mysql, {
     autoStyleContainer: false,
     value: 'MySQL'
   },
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
@@ -253,4 +232,4 @@ var opts = {
   to: { color: '#9ec64d'}
 };
 
-db.animate(0.75, opts);  // Number from 0.0 to 1.0
+db.animate(0.75, opts);
