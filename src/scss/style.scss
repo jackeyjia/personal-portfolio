@@ -17,14 +17,13 @@ body {
   background-color: $blue__primary;
   height: 100vh;
   
-  
   &__profession {
     padding-top: 50vh;
     font-size: 2vw;
     font-family: 'Lato', sans-serif, 'Reenie Beanie', cursive;
     text-align: center;
     color: #F5F5F5;
-
+    
     &__text{
       padding: 10px;
       max-width: 22%;
@@ -33,17 +32,6 @@ body {
       border-radius: 10px;
     }
   }
-  
-  // &__section {
-  //   text-align: center;
-  // }
-  
-  // &__link {
-  //   display: inline;
-  //   padding-top: 1vh;
-  //   padding-left: 0.5vw;
-  //   padding-right: 0.5vw;
-  // }
 }
 
 .sub-section {
@@ -53,13 +41,12 @@ body {
 }
 
 .about-me {
-height: 100vh;
+  height: 100vh;
 }
 
 .padding--top {
   padding-top: 13%;
 }
-
 
 .number-section::after {
   content: ""; 
@@ -86,7 +73,6 @@ height: 100vh;
   line-height: 1.8rem;
   color: #3B6775;
 }
-
 
 .introuction__detail--part2 {
   max-width: 300px;

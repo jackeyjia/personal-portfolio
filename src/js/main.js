@@ -30,8 +30,6 @@
   
 })();
 
-
-
 // Skills Progress Bar
 
 var startColor = '#FC5B3F';
@@ -60,7 +58,6 @@ var opts = {
 };
 
 html.animate(0.75, opts);
-
 
 var css = new ProgressBar.Circle(css3, {
   color: '#aaa',
@@ -111,7 +108,6 @@ var opts = {
 
 sass_1.animate(0.75, opts);
 
-
 var js = new ProgressBar.Circle(javascript, {
   color: '#aaa',
   strokeWidth: 4,
@@ -135,7 +131,6 @@ var opts = {
 };
 
 js.animate(0.75, opts);
-
 
 var angular_js = new ProgressBar.Circle(angularjs, {
   color: '#aaa',
@@ -185,7 +180,6 @@ var opts = {
 
 angular_2.animate(0.75, opts);
 
-
 var node = new ProgressBar.Circle(nodejs, {
   color: '#aaa',
   strokeWidth: 4,
@@ -233,7 +227,6 @@ var opts = {
 };
 
 db.animate(0.75, opts);
-
 
 var mongo = new ProgressBar.Circle(mongodb, {
   color: '#aaa',
@@ -335,64 +328,64 @@ cpp.animate(0.75, opts);
 // Socia Media Icon
 var fbIcon = document.getElementById('facebook-icon');
 fbIcon.onmouseenter = function () {
-    fbIcon.setAttribute("src", "img/socialMedia/Facebook_Color.png");
+  fbIcon.setAttribute("src", "img/socialMedia/Facebook_Color.png");
 };
 fbIcon.onmouseleave = function () {
-    fbIcon.setAttribute("src", "img/socialMedia/Facebook.png");
+  fbIcon.setAttribute("src", "img/socialMedia/Facebook.png");
 };
 
 var gplusIcon = document.getElementById('googlePlus-icon');
 gplusIcon.onmouseenter = function () {
-    gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus_Color.png");
+  gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus_Color.png");
 };
 gplusIcon.onmouseleave = function () {
-    gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus.png");
+  gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus.png");
 };
 
 var lkiIcon = document.getElementById('linkedIn-icon');
 lkiIcon.onmouseenter = function () {
-    lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn_Color.png");
+  lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn_Color.png");
 };
 lkiIcon.onmouseleave = function () {
-    lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn.png");
+  lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn.png");
 };
 
 var tbrIcon = document.getElementById('tumblr-icon');
 tbrIcon.onmouseenter = function () {
-    tbrIcon.setAttribute("src", "img/socialMedia/Tumblr_Color.png");
+  tbrIcon.setAttribute("src", "img/socialMedia/Tumblr_Color.png");
 };
 tbrIcon.onmouseleave = function () {
-    tbrIcon.setAttribute("src", "img/socialMedia/Tumblr.png");
+  tbrIcon.setAttribute("src", "img/socialMedia/Tumblr.png");
 };
 
 var pttIcon = document.getElementById('pinterest-icon');
 pttIcon.onmouseenter = function () {
-    pttIcon.setAttribute("src", "img/socialMedia/Pinterest_Color.png");
+  pttIcon.setAttribute("src", "img/socialMedia/Pinterest_Color.png");
 };
 pttIcon.onmouseleave = function () {
-    pttIcon.setAttribute("src", "img/socialMedia/Pinterest.png");
+  pttIcon.setAttribute("src", "img/socialMedia/Pinterest.png");
 };
 
 var ghIcon = document.getElementById('github-icon');
 ghIcon.onmouseenter = function () {
-    ghIcon.setAttribute("src", "img/socialMedia/GitHub_Color.png");
+  ghIcon.setAttribute("src", "img/socialMedia/GitHub_Color.png");
 };
 ghIcon.onmouseleave = function () {
-    ghIcon.setAttribute("src", "img/socialMedia/GitHub.png");
+  ghIcon.setAttribute("src", "img/socialMedia/GitHub.png");
 };
 
 var twIcon = document.getElementById('twitter-icon');
 twIcon.onmouseenter = function () {
-    twIcon.setAttribute("src", "img/socialMedia/Twitter_Color.png");
+  twIcon.setAttribute("src", "img/socialMedia/Twitter_Color.png");
 };
 twIcon.onmouseleave = function () {
-    twIcon.setAttribute("src", "img/socialMedia/Twitter.png");
+  twIcon.setAttribute("src", "img/socialMedia/Twitter.png");
 };
 
 var wcIcon = document.getElementById('weChat-icon');
 wcIcon.onmouseenter = function () {
-    wcIcon.setAttribute("src", "img/socialMedia/Weixing_Color.png");
+  wcIcon.setAttribute("src", "img/socialMedia/Weixing_Color.png");
 };
 wcIcon.onmouseleave = function () {
-    wcIcon.setAttribute("src", "img/socialMedia/Weixing.png");
+  wcIcon.setAttribute("src", "img/socialMedia/Weixing.png");
 };
