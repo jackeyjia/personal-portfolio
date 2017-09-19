@@ -1,6 +1,7 @@
-const gulp = require('gulp');
+const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
+const sass        = require('gulp-sass');
+var deploy        = require('gulp-gh-pages');
 
 // Compile SASS
 gulp.task('sass', function(){
@@ -44,6 +45,14 @@ gulp.task('fa', function(){
 gulp.task('normalize', function(){
   return gulp.src('node_modules/normalize.css/normalize.css')
     .pipe(gulp.dest("src/css"));
+});
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy',['js', 'serve', 'fa', 'fonts', 'normalize'], function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 gulp.task('default', ['js', 'serve', 'fa', 'fonts', 'normalize']);
