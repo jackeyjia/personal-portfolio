@@ -1,0 +1,24 @@
+.skills{
+  min-height: 100vh;
+  color: #F2F2F2;
+  background: url(../img/body_bg.png);
+  
+  .sub-section {
+    padding: 5% 0 1.5% 0;
+    
+  }
+  
+  &__details {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.progress {
+  margin: 10px 30px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: transparent;
+}

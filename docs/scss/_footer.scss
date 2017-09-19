@@ -1,0 +1,30 @@
+footer {
+  height: 10vh;
+  background: #34495e;
+  color: white;
+  
+  hr {
+    border-top: 2px solid white;
+  }
+  
+  .col-3 {
+    font-size: 1.2rem;
+  }
+}
+
+.social-media {
+  margin-left: 16%;
+}
+
+.icons {
+  float: left;
+  height: 35px;
+  width: 50px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  
+  &:first-child{
+    padding-left: 0;
+    width: 42.5px;
+  }
+}

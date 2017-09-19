@@ -1,0 +1,79 @@
+@import "header";
+@import "timeline";
+@import "welcome";
+@import "skills";
+@import "contact";
+@import "footer";
+
+$blue__primary: #34495e;
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.welcome {
+  background-color: $blue__primary;
+  height: 100vh;
+  
+  &__profession {
+    padding-top: 50vh;
+    font-size: 2vw;
+    font-family: 'Lato', sans-serif, 'Reenie Beanie', cursive;
+    text-align: center;
+    color: #F5F5F5;
+    
+    &__text{
+      padding: 10px;
+      max-width: 22%;
+      margin: 0 auto;
+      border: 3px solid white;
+      border-radius: 10px;
+    }
+  }
+}
+
+.sub-section {
+  display: table;
+  margin: 0 auto;
+  color: #151617;
+}
+
+.about-me {
+  height: 100vh;
+}
+
+.padding--top {
+  padding-top: 13%;
+}
+
+.number-section::after {
+  content: ""; 
+  display: block;
+  width: 30%; 
+  border-bottom: 1.5px solid #151617;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.introuction {
+  margin-top: 6vh;
+}
+
+.introuction__summary {
+  text-align: right;
+  color: $blue__primary;
+}
+
+.introuction__detail {
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  color: #3B6775;
+}
+
+.introuction__detail--part2 {
+  max-width: 300px;
+}
