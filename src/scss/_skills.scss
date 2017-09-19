@@ -1,13 +1,14 @@
 .skills{
-  height: 100vh;
+  margin-top: 8%;
+  min-height: 100vh;
   color: #F2F2F2;
-
-
+  background: url(../img/body_bg.png);
 
   &__details {
     display: table;
     margin: 0 auto;
   }
+
 }
 
 .progress {

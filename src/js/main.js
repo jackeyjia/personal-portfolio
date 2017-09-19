@@ -233,3 +233,102 @@ var opts = {
 };
 
 db.animate(0.75, opts);
+
+
+var mongo = new ProgressBar.Circle(mongodb, {
+  color: '#aaa',
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+    value: 'Mongo DB'
+  },
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    
+  }
+});
+
+var opts = {
+  from: { color: '#FC5B3F'},
+  to: { color: '#9ec64d'}
+};
+
+mongo.animate(0.75, opts);
+
+var java_ = new ProgressBar.Circle(java, {
+  color: '#aaa',
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+    value: 'Java'
+  },
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    
+  }
+});
+
+var opts = {
+  from: { color: '#FC5B3F'},
+  to: { color: '#9ec64d'}
+};
+
+java_.animate(0.75, opts);
+
+var c_ = new ProgressBar.Circle(c, {
+  color: '#aaa',
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+    value: 'C'
+  },
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    
+  }
+});
+
+var opts = {
+  from: { color: '#FC5B3F'},
+  to: { color: '#9ec64d'}
+};
+
+c_.animate(0.75, opts);
+
+var cpp = new ProgressBar.Circle(cplusplus, {
+  color: '#aaa',
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false,
+    value: 'C++'
+  },
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    
+  }
+});
+
+var opts = {
+  from: { color: '#FC5B3F'},
+  to: { color: '#9ec64d'}
+};
+
+cpp.animate(0.75, opts);
+
+

@@ -246,8 +246,10 @@ br {
     transform: translate3d(0, -25%, 0); } }
 
 .skills {
-  height: 100vh;
-  color: #F2F2F2; }
+  margin-top: 8%;
+  min-height: 100vh;
+  color: #F2F2F2;
+  background: url(../img/body_bg.png); }
   .skills__details {
     display: table;
     margin: 0 auto; }
@@ -259,6 +261,9 @@ br {
   height: 200px;
   position: relative;
   background-color: transparent; }
+
+.contact {
+  min-height: 100vh; }
 
 body {
   width: 100%;
