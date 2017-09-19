@@ -1,8 +1,12 @@
 .skills{
-  margin-top: 8%;
   min-height: 100vh;
   color: #F2F2F2;
   background: url(../img/body_bg.png);
+
+  .sub-section {
+    padding: 5% 0 1.5% 0;
+
+  }
 
   &__details {
     display: table;

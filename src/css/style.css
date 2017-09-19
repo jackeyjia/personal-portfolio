@@ -34,7 +34,7 @@
   display: block;
   width: 14px;
   height: 14px;
-  background: #16a085;
+  background: #34495e;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -301,10 +301,11 @@ br {
     transform: translate3d(0, -25%, 0); } }
 
 .skills {
-  margin-top: 8%;
   min-height: 100vh;
   color: #F2F2F2;
   background: url(../img/body_bg.png); }
+  .skills .sub-section {
+    padding: 5% 0 1.5% 0; }
   .skills__details {
     display: table;
     margin: 0 auto; }
@@ -318,7 +319,26 @@ br {
   background-color: transparent; }
 
 .contact {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #16a085; }
+  .contact .sub-section {
+    padding-top: 8.5%;
+    padding-bottom: 2.5%; }
+  .contact h1 {
+    color: white;
+    padding-bottom: 25px;
+    margin: 0; }
+  .contact__icon {
+    margin-right: 20px;
+    height: 35px;
+    width: 35px; }
+  .contact .row {
+    margin-top: 40px;
+    font-size: 1.2rem; }
+  .contact .col-11 {
+    color: white; }
+    .contact .col-11 a {
+      color: white; }
 
 body {
   width: 100%;

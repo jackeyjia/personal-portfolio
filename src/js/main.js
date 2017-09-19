@@ -330,5 +330,3 @@ var opts = {
 };
 
 cpp.animate(0.75, opts);
-
-
