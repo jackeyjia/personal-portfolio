@@ -328,64 +328,64 @@ cpp.animate(0.75, opts);
 // Socia Media Icon
 var fbIcon = document.getElementById('facebook-icon');
 fbIcon.onmouseenter = function () {
-  fbIcon.setAttribute("src", "img/socialMedia/Facebook_Color.png");
+  fbIcon.setAttribute("src", "src/img/socialMedia/Facebook_Color.png");
 };
 fbIcon.onmouseleave = function () {
-  fbIcon.setAttribute("src", "img/socialMedia/Facebook.png");
+  fbIcon.setAttribute("src", "src/img/socialMedia/Facebook.png");
 };
 
 var gplusIcon = document.getElementById('googlePlus-icon');
 gplusIcon.onmouseenter = function () {
-  gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus_Color.png");
+  gplusIcon.setAttribute("src", "src/img/socialMedia/GooglePlus_Color.png");
 };
 gplusIcon.onmouseleave = function () {
-  gplusIcon.setAttribute("src", "img/socialMedia/GooglePlus.png");
+  gplusIcon.setAttribute("src", "src/img/socialMedia/GooglePlus.png");
 };
 
 var lkiIcon = document.getElementById('linkedIn-icon');
 lkiIcon.onmouseenter = function () {
-  lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn_Color.png");
+  lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn_Color.png");
 };
 lkiIcon.onmouseleave = function () {
-  lkiIcon.setAttribute("src", "img/socialMedia/LinkedIn.png");
+  lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn.png");
 };
 
 var tbrIcon = document.getElementById('tumblr-icon');
 tbrIcon.onmouseenter = function () {
-  tbrIcon.setAttribute("src", "img/socialMedia/Tumblr_Color.png");
+  tbrIcon.setAttribute("src", "src/img/socialMedia/Tumblr_Color.png");
 };
 tbrIcon.onmouseleave = function () {
-  tbrIcon.setAttribute("src", "img/socialMedia/Tumblr.png");
+  tbrIcon.setAttribute("src", "src/img/socialMedia/Tumblr.png");
 };
 
 var pttIcon = document.getElementById('pinterest-icon');
 pttIcon.onmouseenter = function () {
-  pttIcon.setAttribute("src", "img/socialMedia/Pinterest_Color.png");
+  pttIcon.setAttribute("src", "src/img/socialMedia/Pinterest_Color.png");
 };
 pttIcon.onmouseleave = function () {
-  pttIcon.setAttribute("src", "img/socialMedia/Pinterest.png");
+  pttIcon.setAttribute("src", "src/img/socialMedia/Pinterest.png");
 };
 
 var ghIcon = document.getElementById('github-icon');
 ghIcon.onmouseenter = function () {
-  ghIcon.setAttribute("src", "img/socialMedia/GitHub_Color.png");
+  ghIcon.setAttribute("src", "src/img/socialMedia/GitHub_Color.png");
 };
 ghIcon.onmouseleave = function () {
-  ghIcon.setAttribute("src", "img/socialMedia/GitHub.png");
+  ghIcon.setAttribute("src", "src/img/socialMedia/GitHub.png");
 };
 
 var twIcon = document.getElementById('twitter-icon');
 twIcon.onmouseenter = function () {
-  twIcon.setAttribute("src", "img/socialMedia/Twitter_Color.png");
+  twIcon.setAttribute("src", "src/img/socialMedia/Twitter_Color.png");
 };
 twIcon.onmouseleave = function () {
-  twIcon.setAttribute("src", "img/socialMedia/Twitter.png");
+  twIcon.setAttribute("src", "src/img/socialMedia/Twitter.png");
 };
 
 var wcIcon = document.getElementById('weChat-icon');
 wcIcon.onmouseenter = function () {
-  wcIcon.setAttribute("src", "img/socialMedia/Weixing_Color.png");
+  wcIcon.setAttribute("src", "src/img/socialMedia/Weixing_Color.png");
 };
 wcIcon.onmouseleave = function () {
-  wcIcon.setAttribute("src", "img/socialMedia/Weixing.png");
+  wcIcon.setAttribute("src", "src/img/socialMedia/Weixing.png");
 };
