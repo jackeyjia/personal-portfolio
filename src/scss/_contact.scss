@@ -1,6 +1,7 @@
 .contact {
   min-height: 100vh;
   background-color: #16a085;
+  padding-bottom: 2%;
   
   .sub-section {
     padding-top: 8.5%;
@@ -31,4 +32,11 @@
       color: white;
     }
   }
+}
+
+
+.map {
+  background: red;
+  width: 100%;
+  height: 370px;
 }

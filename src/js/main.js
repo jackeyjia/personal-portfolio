@@ -48,7 +48,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -72,7 +72,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -97,7 +97,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -121,7 +121,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -145,7 +145,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -169,7 +169,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -193,7 +193,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -217,7 +217,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -241,7 +241,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -265,7 +265,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -289,7 +289,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -313,7 +313,7 @@
 //   step: function(state, circle) {
 //     circle.path.setAttribute('stroke', state.color);
 //     circle.path.setAttribute('stroke-width', state.width);
-    
+
 //   }
 // });
 
@@ -389,3 +389,13 @@ wcIcon.onmouseenter = function () {
 wcIcon.onmouseleave = function () {
   wcIcon.setAttribute("src", "src/img/socialMedia/Weixing.png");
 };
+
+
+
+function myMap() {
+  var mapOptions = {
+      center: new google.maps.LatLng(51.5, -0.12),
+      zoom: 10,
+  }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}

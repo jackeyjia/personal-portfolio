@@ -301,6 +301,15 @@ br {
     transform: translate3d(0, -25%, 0); } }
 
 .skills {
+  min-height: 100vh;
+  color: #F2F2F2; }
+  .skills .sub-section {
+    padding: 5% 0 1.5% 0; }
+  .skills__details {
+    display: table;
+    margin: 0 auto; }
+
+.skills {
   min-height: 100vh; }
   .skills .card {
     max-width: 550px;
@@ -308,7 +317,7 @@ br {
     height: 400px;
     font-family: 'Droid Serif', serif;
     color: #fff;
-    margin: 10%;
+    margin: 5% 10%;
     overflow: hidden;
     border-radius: 0px;
     box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
@@ -326,7 +335,7 @@ br {
       width: 100%; }
     .skills .card__info {
       color: red;
-      opacity: 1;
+      opacity: 0;
       bottom: 100px;
       box-sizing: border-box;
       padding: 0;
@@ -339,7 +348,9 @@ br {
       line-height: 24px;
       z-index: 20;
       opacity: 0;
-      transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1); }
+      transition: bottom 1s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1); }
+      .skills .card__info:hover {
+        opacity: 1; }
     .skills .card__overlay {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
@@ -347,7 +358,8 @@ br {
 
 .contact {
   min-height: 100vh;
-  background-color: #16a085; }
+  background-color: #16a085;
+  padding-bottom: 2%; }
   .contact .sub-section {
     padding-top: 8.5%;
     padding-bottom: 2.5%; }
@@ -366,6 +378,11 @@ br {
     color: white; }
     .contact .col-11 a {
       color: white; }
+
+.map {
+  background: red;
+  width: 100%;
+  height: 370px; }
 
 footer {
   height: 10vh;
