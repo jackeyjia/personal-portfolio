@@ -12,16 +12,6 @@
   }
 }
 
-// .progress {
-//   margin: 10px 30px;
-//   display: inline-block;
-//   width: 200px;
-//   height: 200px;
-//   position: relative;
-//   background-color: transparent;
-// }
-
-
 .skills {
   min-height: 100vh;
   
@@ -37,7 +27,6 @@
     box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition:all 0.4s;
-    background: url("../img/lee-campbell-106610.jpg") center no-repeat;
     background-size: 180%;
 
     &:hover {
@@ -53,7 +42,7 @@
     }
     
     &__info {
-      color: red;
+      color: #16a085;
       opacity: 0;
       bottom: 100px;
       box-sizing: border-box;
@@ -75,8 +64,29 @@
 
     &__overlay {
       height: 100%; 
-      background-color: rgba(0,0,0,0.5); 
+      background-color: rgba(0, 0, 0, 0.5); 
       z-index: 10;
     }
   }
+}
+
+
+.web-dev {
+  background: url("../img/lee-campbell-106610.jpg") center no-repeat;
+}
+
+.ui-design {
+  background: url("../img/bigger.jpg") no-repeat;
+}
+
+.soft-dev {
+  background: url("../img/markus-spiske-207946.jpg");
+}
+
+.problem-solving {
+  background: url("../img/thinking.jpeg");
+}
+
+.finance {
+  background: url("../img/finance.jpg") center no-repeat;
 }
