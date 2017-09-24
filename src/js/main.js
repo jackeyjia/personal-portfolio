@@ -396,6 +396,6 @@ function myMap() {
   var mapOptions = {
       center: new google.maps.LatLng(43.4722854,-80.5448576,15),
       zoom: 14,
-  }
+  };
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
