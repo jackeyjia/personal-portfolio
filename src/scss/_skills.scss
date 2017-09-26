@@ -10,10 +10,10 @@
     display: table;
     margin: 0 auto;
   }
-}
-
-.skills {
-  min-height: 100vh;
+  
+  .container {
+    margin-bottom: 5%;
+  }
   
   .card {
     max-width: 550px;
@@ -27,23 +27,34 @@
     text-align: center;
     transition:all 0.4s;
     background-size: 180%;
-
+    
     &:hover {
       box-shadow: 9px 8px 29px -1px rgba(0,0,0,0.49);
       -webkit-box-shadow: 9px 8px 29px -1px rgba(0,0,0,0.49);
       -moz-box-shadow: 9px 8px 29px -1px rgba(0,0,0,0.49);
     }
-
+    
     &__title {
-      text-align: center;
       margin: 120px 0 0 0;
       position: absolute;
       z-index: 20;
       width: 100%;
+
+      h3 {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 2%;
+        text-shadow: 4px 4px 8px rgba(150, 150, 149, 0.61);
+        box-shadow: 9px 8px 29px -1px rgba(82, 77, 77, 0.49);
+        -webkit-box-shadow: 9px 8px 29px -1px rgba(82, 77, 77, 0.49);
+        -moz-box-shadow: 9px 8px 29px -1px rgba(82, 77, 77, 0.49);
+      }
     }
+
+
     
     &__info {
-      color: #16a085;
+      color: rgba(255, 255, 255, 0.84);
       opacity: 0;
       bottom: 100px;
       box-sizing: border-box;
@@ -51,18 +62,19 @@
       width: 100%;
       position: absolute;
       left: 0;
-      margin: 0 auto;
-      padding: 0 50px;
+      padding: 0 60px;
       font-style: 16px;
       line-height: 24px;
       z-index: 20;
       opacity: 0;
       transition: bottom 1s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+
       &:hover {
         opacity: 1;
+        z-index: 20;
       }
     }
-
+    
     &__overlay {
       height: 100%; 
       background-color: rgba(0, 0, 0, 0.5); 
@@ -90,4 +102,9 @@
 
 .finance {
   background: url("../img/finance.jpg") center no-repeat;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }

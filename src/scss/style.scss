@@ -23,6 +23,7 @@ body {
     font-family: 'Lato', sans-serif, 'Reenie Beanie', cursive;
     text-align: center;
     color: #F5F5F5;
+    z-index: 5;
     
     &__text{
       padding: 10px;
@@ -30,6 +31,11 @@ body {
       margin: 0 auto;
       border: 3px solid white;
       border-radius: 10px;
+      text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.61);
+      box-shadow: 9px 8px 29px -1px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 9px 8px 29px -1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 9px 8px 29px -1px rgba(0, 0, 0, 0.5);
+      
     }
   }
 }
@@ -41,7 +47,7 @@ body {
 }
 
 .about-me {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .padding--top {
@@ -66,12 +72,14 @@ body {
 .introuction__summary {
   text-align: right;
   color: $blue__primary;
+  font-size: 2rem;
 }
 
 .introuction__detail {
   font-size: 0.8rem;
   line-height: 1.8rem;
   color: #3B6775;
+  font-size: 1rem;
 }
 
 .introuction__detail--part2 {

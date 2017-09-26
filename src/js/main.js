@@ -30,300 +30,33 @@
   
 })();
 
-// Skills Progress Bar
 
-// var startColor = '#FC5B3F';
-// var endColor = '#9ec64d';
+// Add animation when scrool to skills section
+function isElementInViewport(elem) {
+  var $elem = $(elem);
 
-// var html = new ProgressBar.Circle(html5, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'HTML5'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
+  var scrollElement = ((navigator.userAgent.toLocaleLowerCase().indexOf('webkit') != -1)? 'body' : 'html');
+  var viewportTop = $(scrollElement).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
 
-//   }
-// });
+  var elemTop = Math.round($elem.offset().top);
+  var elemBottom = elemTop + $elem.height();
 
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
+  return ((elemTop < viewportBottom) && (elemBottom > viewportBottom));
+}
 
-// html.animate(0.75, opts);
+function checkAnimation() {
+  var $elem = $('#cards');
+  if ($elem.hasClass('fadeInUp')) return;
 
-// var css = new ProgressBar.Circle(css3, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'CSS3'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
+  if (isElementInViewport($elem)) {
+    $elem.addClass('animated fadeInUp');
+  }
+}
 
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// css.animate(0.75, opts);
-
-
-// var sass_1 = new ProgressBar.Circle(sass, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'SASS'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// sass_1.animate(0.75, opts);
-
-// var js = new ProgressBar.Circle(javascript, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'JavaScript'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// js.animate(0.75, opts);
-
-// var angular_js = new ProgressBar.Circle(angularjs, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'AngularJS'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// angular_js.animate(0.75, opts);
-
-// var angular_2 = new ProgressBar.Circle(angular, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'Angular'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// angular_2.animate(0.75, opts);
-
-// var node = new ProgressBar.Circle(nodejs, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'Node.js'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// node.animate(0.75, opts);
-
-// var db = new ProgressBar.Circle(mysql, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'MySQL'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// db.animate(0.75, opts);
-
-// var mongo = new ProgressBar.Circle(mongodb, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'Mongo DB'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// mongo.animate(0.75, opts);
-
-// var java_ = new ProgressBar.Circle(java, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'Java'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// java_.animate(0.75, opts);
-
-// var c_ = new ProgressBar.Circle(c, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'C'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// c_.animate(0.75, opts);
-
-// var cpp = new ProgressBar.Circle(cplusplus, {
-//   color: '#aaa',
-//   strokeWidth: 4,
-//   trailWidth: 1,
-//   easing: 'easeInOut',
-//   duration: 1400,
-//   text: {
-//     autoStyleContainer: false,
-//     value: 'C++'
-//   },
-//   step: function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.path.setAttribute('stroke-width', state.width);
-
-//   }
-// });
-
-// var opts = {
-//   from: { color: '#FC5B3F'},
-//   to: { color: '#9ec64d'}
-// };
-
-// cpp.animate(0.75, opts);
-
+$(window).scroll(function() {
+  checkAnimation();
+});
 
 // Socia Media Icon
 var fbIcon = document.getElementById('facebook-icon');
