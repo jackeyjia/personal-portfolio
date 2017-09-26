@@ -59,21 +59,6 @@ $(window).scroll(function() {
 });
 
 // Socia Media Icon
-var fbIcon = document.getElementById('facebook-icon');
-fbIcon.onmouseenter = function () {
-  fbIcon.setAttribute("src", "src/img/socialMedia/Facebook_Color.png");
-};
-fbIcon.onmouseleave = function () {
-  fbIcon.setAttribute("src", "src/img/socialMedia/Facebook.png");
-};
-
-var gplusIcon = document.getElementById('googlePlus-icon');
-gplusIcon.onmouseenter = function () {
-  gplusIcon.setAttribute("src", "src/img/socialMedia/GooglePlus_Color.png");
-};
-gplusIcon.onmouseleave = function () {
-  gplusIcon.setAttribute("src", "src/img/socialMedia/GooglePlus.png");
-};
 
 var lkiIcon = document.getElementById('linkedIn-icon');
 lkiIcon.onmouseenter = function () {
@@ -82,21 +67,8 @@ lkiIcon.onmouseenter = function () {
 lkiIcon.onmouseleave = function () {
   lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn.png");
 };
-
-var tbrIcon = document.getElementById('tumblr-icon');
-tbrIcon.onmouseenter = function () {
-  tbrIcon.setAttribute("src", "src/img/socialMedia/Tumblr_Color.png");
-};
-tbrIcon.onmouseleave = function () {
-  tbrIcon.setAttribute("src", "src/img/socialMedia/Tumblr.png");
-};
-
-var pttIcon = document.getElementById('pinterest-icon');
-pttIcon.onmouseenter = function () {
-  pttIcon.setAttribute("src", "src/img/socialMedia/Pinterest_Color.png");
-};
-pttIcon.onmouseleave = function () {
-  pttIcon.setAttribute("src", "src/img/socialMedia/Pinterest.png");
+lkiIcon.onclick = function () {
+  window.location.href = "http://www.linkedin.com/in/jackeyjia";
 };
 
 var ghIcon = document.getElementById('github-icon');
@@ -106,24 +78,9 @@ ghIcon.onmouseenter = function () {
 ghIcon.onmouseleave = function () {
   ghIcon.setAttribute("src", "src/img/socialMedia/GitHub.png");
 };
-
-var twIcon = document.getElementById('twitter-icon');
-twIcon.onmouseenter = function () {
-  twIcon.setAttribute("src", "src/img/socialMedia/Twitter_Color.png");
+ghIcon.onclick = function () {
+  window.location.href = "https://github.com/jackeyjia";
 };
-twIcon.onmouseleave = function () {
-  twIcon.setAttribute("src", "src/img/socialMedia/Twitter.png");
-};
-
-var wcIcon = document.getElementById('weChat-icon');
-wcIcon.onmouseenter = function () {
-  wcIcon.setAttribute("src", "src/img/socialMedia/Weixing_Color.png");
-};
-wcIcon.onmouseleave = function () {
-  wcIcon.setAttribute("src", "src/img/socialMedia/Weixing.png");
-};
-
-
 
 function myMap() {
   var mapOptions = {
