@@ -61,31 +61,23 @@ $(window).scroll(function() {
 // Socia Media Icon
 
 var lkiIcon = document.getElementById('linkedIn-icon');
-lkiIcon.onmouseenter = function () {
-  lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn_Color.png");
-};
-lkiIcon.onmouseleave = function () {
-  lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn.png");
-};
+// lkiIcon.onmouseenter = function () {
+//   lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn_Color.png");
+// };
+// lkiIcon.onmouseleave = function () {
+//   lkiIcon.setAttribute("src", "src/img/socialMedia/LinkedIn.png");
+// };
 lkiIcon.onclick = function () {
   window.location.href = "http://www.linkedin.com/in/jackeyjia";
 };
 
 var ghIcon = document.getElementById('github-icon');
-ghIcon.onmouseenter = function () {
-  ghIcon.setAttribute("src", "src/img/socialMedia/GitHub_Color.png");
-};
-ghIcon.onmouseleave = function () {
-  ghIcon.setAttribute("src", "src/img/socialMedia/GitHub.png");
-};
+// ghIcon.onmouseenter = function () {
+//   ghIcon.setAttribute("src", "src/img/socialMedia/GitHub_Color.png");
+// };
+// ghIcon.onmouseleave = function () {
+//   ghIcon.setAttribute("src", "src/img/socialMedia/GitHub.png");
+// };
 ghIcon.onclick = function () {
   window.location.href = "https://github.com/jackeyjia";
 };
-
-function myMap() {
-  var mapOptions = {
-      center: new google.maps.LatLng(43.4722854,-80.5448576,15),
-      zoom: 14,
-  };
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
